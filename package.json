@@ -4,11 +4,12 @@
     "private": true,
     "type": "module",
     "scripts": {
+        "clean": "rimraf public/build",
         "build:css": "tailwindcss -i src/global.css -o public/build/tailwind.css",
-        "watch:css": "tailwindcss -i src/global.css -o public/build/tailwind.css --watch",
-        "build": "rollup -c",
+        "build": "npm run clean && npm run build:css && rollup -c",
         "dev": "concurrently \"npm run watch:css\" \"npm run dev:svelte\"",
         "dev:svelte": "rollup -c -w",
+        "watch:css": "tailwindcss -i src/global.css -o public/build/tailwind.css --watch",
         "start": "sirv public --no-clear"
     },
     "devDependencies": {
