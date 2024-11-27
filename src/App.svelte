@@ -5,7 +5,7 @@
 	let fonts = fontList.fonts; // Extract the font list from the JSON
 	let inputText = "እያንዳንዱ፡ሰው፡የዘር፡የቀለም፡የጾታ፡የቋንቋ፡የሃይማኖት"; // Default text
 	let fontSize = 36; // Set default font size
-	let isGridView = false; // State to toggle between list and grid view
+	let isGridView = true; // State to toggle between list and grid view
 	let tempInput = "";
 
 	// Update `inputText` when user types
