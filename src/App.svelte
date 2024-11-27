@@ -7,11 +7,17 @@
 	let fontSize = 36; // Set default font size
 	let isGridView = true; // State to toggle between list and grid view
 	let tempInput = "";
-
-	// Update `inputText` when user types
+	let cardText = inputText;
 	function handleInput(event) {
-    inputText = event.target.value;
+    tempInput = event.target.value;
+    if (tempInput === "") {
+      tempInput = inputText;
+    }
   }
+	// Update `inputText` when user types
+// 	function handleInput(event) {
+//     inputText = event.target.value;
+//   }
   let textColor = "#ffffff"; // Default text color
   let bgColor = "#202124"; // Default background color
   let buttonColor = "#FFFFFF"; // Default button color
@@ -117,7 +123,8 @@
 			type="text"
 			placeholder="Type something..."
 			bind:value={tempInput}
-			on:input={handleInput}
+			on:input={() => cardText = tempInput || inputText}
+			
 			class="p-2  lg:w-[30rem] border border-gray-300 rounded-md bg-[#626262cc] text-stone-200  sm:w-96 focus:border-[#404349] focus:outline-none mb-5 sm:mb-0"
 		  />
 		  <!-- Font Size Slider -->
@@ -219,7 +226,7 @@
 			class="w-full mb-4 "
 			style="font-family: '{font.replace(/\.[^/.]+$/, '')}'; font-size: {fontSize}px; color: {textColor}; "
 		  >
-			{inputText}
+		  {cardText}
 		  </div>
 		</div>
 	  {/each}
