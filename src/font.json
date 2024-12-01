@@ -30,10 +30,14 @@
         "Habesha STENCIL.ttf",
         "HABESHAPIXELS-Bold.ttf",
         "HABESHAPIXELS.ttf",
+        "HH Lemd Mono-Regular.otf",
         "Hiwua.ttf",
         "Jiret.ttf",
         "Kefa.ttf",
         "KIROS.ttf",
+        "LogaDisplay-Bold.ttf",
+        "LogaDisplay-Medium.ttf",
+        "LogaDisplay-Regular.ttf",
         "Meaza.ttf",
         "Menilik.ttf",
         "MONOLITHIC GEEZ.otf",
@@ -133,6 +137,9 @@
         "ShiromedaSerif-Bold.ttf",
         "ShiromedaSerif-Regular.ttf",
         "ShiromedaSerif-SemiBold.ttf",
+        "SurGraphics Bold.ttf",
+        "SurGraphics ExtraBold.ttf",
+        "SurGraphics Regural.ttf",
         "Tayitu.ttf",
         "Tera-Regular.ttf",
         "Tera.ttf",
@@ -142,6 +149,8 @@
         "Wukiyanos.ttf",
         "Yebs.ttf",
         "Yigezu Bisrat.ttf",
-        "Zelan.ttf"
+        "zamaric.ttf",
+        "Zelan.ttf",
+        "Zibriqriq - ዝብርቅርቅ.ttf"
     ]
 }

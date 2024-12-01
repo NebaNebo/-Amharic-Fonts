@@ -1,5 +1,6 @@
 <script>
-	import { injectAnalytics } from '@vercel/analytics/sveltekit'
+
+
 	import { onMount } from "svelte";
 	import fontList from "./font.json"; // Import the JSON file containing font names
   
@@ -34,6 +35,7 @@
       b: bigint & 255,
     };
   }
+
 
   // Calculate relative luminance
   function getLuminance({ r, g, b }) {
